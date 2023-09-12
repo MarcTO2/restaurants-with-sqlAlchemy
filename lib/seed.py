@@ -27,13 +27,4 @@ session.add_all([restaurant1, restaurant2, customer1, customer2, review1, review
 session.commit()
 session.close()
 
-# Query and display restaurant reviews
-restaurant_reviews = restaurant1.get_reviews()
-for review in restaurant_reviews:
-    print(f"Review for Restaurant: {review.restaurant.name}, Rating: {review.star_rating}")
-
-# Query and display restaurant customers
-restaurant_customers = restaurant1.get_customers()
-for customer in restaurant_customers:
-    print(f"Customer of Restaurant: {customer.get_restaurants()[0].name}, Name: {customer.full_name()}")
 
