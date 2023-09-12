@@ -37,10 +37,3 @@ restaurant_customers = restaurant1.get_customers()
 for customer in restaurant_customers:
     print(f"Customer of Restaurant: {customer.get_restaurants()[0].name}, Name: {customer.full_name()}")
 
-# Query and display customer of a review
-review_customer = review1.get_customer()
-print(f"Customer of Review: {review_customer.full_name()}")
-
-# Query and display restaurant of a review
-review_restaurant = review1.get_restaurant()
-print(f"Restaurant of Review: {review_restaurant.name}")
